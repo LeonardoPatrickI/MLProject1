@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Test Git') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/LeonardoPatrickI/MLProject1.git'
+                echo "Git funktioniert!"
+                sh 'git --version'
             }
         }
     }
